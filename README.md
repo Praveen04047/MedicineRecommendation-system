@@ -1,4 +1,4 @@
-# Weather Application
+# Medication Recommendation Application
 
 ## Description
 
