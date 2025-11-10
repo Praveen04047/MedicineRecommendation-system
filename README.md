@@ -17,30 +17,30 @@ The Weather Application is a Spring Boot project designed to provide weather inf
     │   │       └── harsh
     │   │           └── weather
     │   │               ├── controller
-    │   │               │   └── WeatherController.java
+    │   │               │   └── RecommendationController.java
     │   │               ├── service
-    │   │               │   └── WeatherService.java
-    │   │               └── WeatherApplication.java
+    │   │               │   └── RecommendationService.java
+    │   │               └── MedicationRecommendation.java
     │   └── resources
     │       ├── application.properties
     │       ├── static
     │       │   └── style.css
     │       └── templates
-    │           └── weather.html
+    │           └── recommendation.html
     └── test
         └── java
             └── com
                 └── harsh
                     └── weather
-                        └── WeatherApplicationTests.java
+                        └── MedicationRecommendationTest.java
 ```
 
 ## Features
 
-- **Controller**: `WeatherController.java` - Handles HTTP requests related to weather information.
-- **Service**: `WeatherService.java` - Contains business logic for processing weather data.
-- **Application**: `WeatherApplication.java` - Entry point of the Spring Boot application.
-- **Templates**: `weather.html` - Thymeleaf template for displaying weather data.
+- **Controller**: `RecommendationController.java` - Handles HTTP requests related to weather information.
+- **Service**: `RecommendationService.java` - Contains business logic for processing weather data.
+- **Application**: `MedicationRecommendation.java` - Entry point of the Spring Boot application.
+- **Templates**: `recommendation.html` - Thymeleaf template for displaying weather data.
 - **Static Resources**: `style.css` - Stylesheet for application styling.
 
 ## Getting Started
@@ -55,13 +55,13 @@ The Weather Application is a Spring Boot project designed to provide weather inf
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/Harshyadav02/Weather-App.git
+    git clone https://github.com/Praveen04047/MedicationRecommendation.git
     ```
 
 2. Navigate to the project directory:
 
     ```sh
-    cd Weather-App
+    cd MedicationRecommendation
     ```
 
 3. Build the project using Maven:
