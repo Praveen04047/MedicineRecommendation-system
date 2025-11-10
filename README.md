@@ -2,7 +2,7 @@
 
 ## Description
 
-The Weather Application is a Spring Boot project designed to provide weather information. It includes a basic setup with controllers and services, and utilizes Thymeleaf templates for rendering views. The application is structured to handle basic weather data retrieval and presentation.
+The  Medication Recommendation Application is a Spring Boot project designed to recommend desease information. It includes a basic setup with controllers and services, and utilizes Thymeleaf templates for rendering views. The application is structured to handle basic weather data retrieval and presentation.
 
 ## Project Structure
 ```sh 
@@ -20,7 +20,7 @@ The Weather Application is a Spring Boot project designed to provide weather inf
     │   │               │   └── RecommendationController.java
     │   │               ├── service
     │   │               │   └── RecommendationService.java
-    │   │               └── MedicationRecommendation.java
+    │   │               └── MedicineRecommendation.java
     │   └── resources
     │       ├── application.properties
     │       ├── static
@@ -32,14 +32,14 @@ The Weather Application is a Spring Boot project designed to provide weather inf
             └── com
                 └── harsh
                     └── weather
-                        └── MedicationRecommendationTest.java
+                        └── MedicineRecommendationTest.java
 ```
 
 ## Features
 
 - **Controller**: `RecommendationController.java` - Handles HTTP requests related to weather information.
 - **Service**: `RecommendationService.java` - Contains business logic for processing weather data.
-- **Application**: `MedicationRecommendation.java` - Entry point of the Spring Boot application.
+- **Application**: `MedicineRecommendation.java` - Entry point of the Spring Boot application.
 - **Templates**: `recommendation.html` - Thymeleaf template for displaying weather data.
 - **Static Resources**: `style.css` - Stylesheet for application styling.
 
@@ -61,7 +61,7 @@ The Weather Application is a Spring Boot project designed to provide weather inf
 2. Navigate to the project directory:
 
     ```sh
-    cd MedicationRecommendation
+    cd MedicineRecommendation
     ```
 
 3. Build the project using Maven:
