@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Recommendation System</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <form class="search" action="" method="post">
+                <input type="text"
+                       placeholder="Enter your symptoms (comma separated)..."
+                       class="searchform"
+                       name="symptoms" required>
+                <button type="submit">Get Recommendations</button>
+            </form> 
+        </div>
+    </div>
+
+    <div class="container" th:if="${recommendations != null}">
+        <h2>Your symptoms: <span th:text="${symptoms}"></span></h2>
+        <h3>Recommended Medications</h3>
+        <ul>
+            <li th:each="rec : ${recommendations}">
+                <strong th:text="${rec.medicineName}">Medicine Name</strong><br>
+                Dosage: <span th:text="${rec.dosage}">Dosage info</span><br>
+                Side-effects: <span th:text="${rec.sideEffects}">Side effects info</span>
+            </li>
+        </ul>
+        <p class="disclaimer">
+            <em>Disclaimer: This tool provides informational suggestions only. It is not a substitute for professional medical advice.</em>
+        </p>
+    </div>
+
+</body>
+</html>
